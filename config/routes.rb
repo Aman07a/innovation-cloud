@@ -7,4 +7,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  root 'signups#new'
+
+  get '/thanks', to: 'pages#thanks'
+
+  resources :signups
 end
